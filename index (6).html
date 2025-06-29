@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DesignStudio Nepal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+    body {
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      background: #0a0a0a;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 5px 20px #FFD70066;
+      border-bottom: 2px solid #FFD700;
+    }
+    header h1 {
+      font-size: 3em;
+      color: #FFD700;
+      text-shadow: 2px 2px 4px #00000088;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      color: #FFD700;
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+      text-shadow: 1px 1px 2px #000000aa;
+    }
+    p, li {
+      font-size: 1.1em;
+      color: #dddddd;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background: #FFD700;
+      color: #000;
+      font-weight: 700;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 5px 20px #FFD70066;
+      transition: transform 0.2s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .portfolio-grid img {
+      width: 300px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #FFD70033;
+    }
+    .pricing-box {
+      background: #1a1a1a;
+      border: 1px solid #FFD70044;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 0 10px #FFD70022;
+    }
+    footer {
+      text-align: center;
+      background: #0a0a0a;
+      padding: 30px 20px;
+      border-top: 2px solid #FFD70022;
+      color: #999;
+    }
+    .features-list, .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .feature, .testimonial {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px #00000033;
+      max-width: 300px;
+      text-align: center;
+    }
+    .feature h4, .testimonial h4 {
+      color: #FFD700;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DesignStudio Nepal</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Make Your Brand Shine</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">DesignStudio Nepal offers high-end, eye-catching logos, thumbnails, and banners to help your business or channel stand out. Trusted by creators and brands across Nepal and beyond.</p>
+    <div style="text-align:center">
+      <a href="https://wa.me/9816715771" class="btn">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Our Work</h2>
+    <div class="portfolio-grid">
+      <img src="https://via.placeholder.com/300x180.png?text=Premium+Logo" alt="Logo">
+      <img src="https://via.placeholder.com/300x180.png?text=3D+Thumbnail" alt="Thumbnail">
+      <img src="https://via.placeholder.com/300x180.png?text=YouTube+Banner" alt="Banner">
+      <img src="https://via.placeholder.com/300x180.png?text=Social+Media+Post" alt="Post">
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Why Choose Us?</h2>
+    <div class="features-list">
+      <div class="feature">
+        <h4>✨ Premium Quality</h4>
+        <p>All our designs are crafted to perfection with high-resolution and unique style.</p>
+      </div>
+      <div class="feature">
+        <h4>🚀 Fast Delivery</h4>
+        <p>We value your time. Get your designs delivered within 24 hours.</p>
+      </div>
+      <div class="feature">
+        <h4>💼 Affordable Pricing</h4>
+        <p>Professional design without breaking the bank. Ideal for students and startups.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Our Pricing</h2>
+    <div class="pricing-box">
+      <h3>🧠 Logo Design – NPR 300</h3>
+      <p>Modern, 3D or flat style logo + transparent PNG</p>
+    </div>
+    <div class="pricing-box">
+      <h3>📸 YouTube Thumbnail – NPR 150</h3>
+      <p>CTR-optimized, vibrant thumbnail with pro font and styling</p>
+    </div>
+    <div class="pricing-box">
+      <h3>🖼️ Social Media Banner – NPR 500</h3>
+      <p>Stylish 8D/3D look banners for YouTube, Facebook, or Insta</p>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Client Feedback</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <h4>Ramesh K.</h4>
+        <p>“Best thumbnail design I’ve received! It boosted my video views by 30%.”</p>
+      </div>
+      <div class="testimonial">
+        <h4>Sneha T.</h4>
+        <p>“Professional, fast, and friendly. Highly recommended for logo work!”</p>
+      </div>
+      <div class="testimonial">
+        <h4>Yash Vlogs</h4>
+        <p>“My YouTube channel looks premium now thanks to the banner & thumbnail package!”</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p style="text-align:center">Have a custom request? Want a design consultation? Reach us anytime!</p>
+    <ul style="text-align:center; list-style: none; padding-top: 10px;">
+      <li>📞 WhatsApp: <a href="https://wa.me/9816715771" style="color: #FFD700">9816715771</a></li>
+      <li>📧 Email: <a href="mailto:dowransharma20@gmail.com" style="color: #FFD700">dowransharma20@gmail.com</a></li>
+      <li>🌐 Facebook: <a href="https://facebook.com/DesignStudioNepal" style="color: #FFD700">facebook.com/DesignStudioNepal</a></li>
+    </ul>
+    <div style="text-align:center">
+      <a href="https://wa.me/9816715771" class="btn">Send Message Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DesignStudio Nepal. Crafted with ❤️ and creativity. Verified by Nepal Government.</p>
+  </footer>
+</body>
+</html>
